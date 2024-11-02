@@ -1,0 +1,36 @@
+:root {
+    --suggested: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --global-font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --second-global-font-family: Comic Sans MS Bold,Avenir Roman,Avenir Next Condensed Bold;
+    --sk-fill-tertiary: #fdfdfd;
+  }
+  /* .container_faq{
+    width: 90%;
+    display: flex;
+    align-content: center;
+    background-color: rgb(165, 102, 102);
+  } */
+.faq{
+    font-family: var(--global-font-family);
+    padding: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80em;
+    justify-content: space-between;
+  
+}
+.faq_title{margin-bottom: 1em; 
+         font-size: 30px;
+         font-weight: 400;
+}
+.quote{line-height: 1.5em;
+       font-weight: 400;
+       font-size: medium;
+}
+.faq_dropper{
+    
+    max-width: 40em;
+    padding: 0 0em 2em 0;
+    background-color: aquamarine;
+    
+}
