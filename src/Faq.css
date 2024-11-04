@@ -31,6 +31,12 @@
     
     max-width: 40em;
     padding: 0 0em 2em 0;
-    background-color: aquamarine;
+    
     
 }
+.questions_section{
+    padding-bottom: 1em;
+    font-size: 18px;
+    font-weight: 600;
+}
+.questions_answer{padding-bottom: 1em;}
