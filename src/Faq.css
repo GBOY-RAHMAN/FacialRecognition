@@ -26,6 +26,8 @@
 .quote{line-height: 1.5em;
        font-weight: 400;
        font-size: medium;
+       border-bottom: 2px solid black;
+       margin-bottom: 10px;
 }
 .faq_dropper{
     
@@ -36,12 +38,16 @@
 }
 .questions_section{
     padding-bottom: 1em;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     justify-content: space-between;
 }
-.questions_answer{padding-bottom: 1em;}
+.questions_answer{
+    padding-bottom: 1em;
+    font-weight: 400;
+    font-size: 14px;
+}
 .icons_readmore{
     background-color: rgb(31, 140, 212);
     border-radius: 1px;
