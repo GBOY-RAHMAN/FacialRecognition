@@ -14,7 +14,6 @@ createRoot(document.getElementById('root')).render(
     <App />
     <Howitworks />
     <Steps/>
-   <Fraudprvention />
    <FAQ />
   </StrictMode>,
 )
