@@ -1,4 +1,5 @@
-import React from 'react'
+import * as React from 'react';
+import './faq.css'
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
@@ -8,7 +9,6 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import './comptcss.css'
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -18,7 +18,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     padding: theme.spacing(1),
   },
 }));
-export default function Howitworks() {
+
+export default function Motion() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -27,46 +28,16 @@ export default function Howitworks() {
   const handleClose = () => {
     setOpen(false);
   };
-  return (
-    <>
-    <section className='container_hwt'>
-    <section className='section_howitwork'>
-    <h1 className='header_prp'>
-        How it works 
-    </h1>
-    <p className='para_hw'>Imagine a world where payments are as easy as a glance. Our facial recognition payment technology eliminates the need for cash, cards, or complex passwords, providing you with a seamless and secure checkout experience. Simply set up your profile, confirm with a look, and enjoy instant access to your purchases. Here’s how it works in three simple steps:</p>
-     
-    </section>
-  {/* <div className='invoice'>
-   <div className='container_invoices'>
 
-      <section className='cover_items'>
-        
-        <h2 className='demo_invoice'>Bill Summary</h2>
-        <div className='item1'>
-          <div className='item_desc'><p> Boot Grey 368-Cb</p><p>60$</p></div>
-          
-        </div>
-        <div className='item1'>
-          <div className='item_desc'><p> Boot Grey 368-Cb</p><p>60$</p></div>
-          
-        </div>
-        <div className='item1'>
-          <div className='item_desc'><p> Boot Grey 368-Cb</p><p>60$</p></div>
-          
-        </div>
-        <div className='item1'>
-          <div className='item_desc'><p> Boot Grey 368-Cb</p><p>60$</p></div>
-          
-        </div>
-        <React.Fragment >
+  return (
+    <React.Fragment >
       <section className='section_modal'>
         <div className='modals'>
           <div> 
             <h2>Demo Invoice</h2>
             <div></div>
           
-       </div> */}
+          </div>
          
 
       <Button variant="outlined" onClick={handleClickOpen}>
@@ -117,14 +88,5 @@ export default function Howitworks() {
       </div>
       </section>
     </React.Fragment>
-        </section>
-      </div>
-      
-     </div>
-
-     
-    </section>
-    </>
-
-  )
+  );
 }

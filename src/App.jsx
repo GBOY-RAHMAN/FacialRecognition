@@ -25,18 +25,7 @@ function App() {
 </div>
 
     
-    {/* <div class="circle-background">
-  <div class="circle layer-1">
-    <div class="circle layer-2">
-      <div class="circle layer-3">
-       
-      <div className='box'>
-      <img src={faceImage} className="logo" alt="face logo" />
-      </div>
-      </div>
-    </div>
-  </div>
-  </div> */}
+    
     </>
   )
 }

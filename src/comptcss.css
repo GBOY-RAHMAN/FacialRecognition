@@ -11,10 +11,16 @@
     padding: 2em;
     margin: 1em;
   }
-
+  .container_hwt{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .section_howitwork{
     
-    max-width:50em ;
+    max-width:40em ;
     font-family: var(--global-font-family);
     padding: 2em;
   }
@@ -57,6 +63,53 @@ background-color: rgb(216, 215, 216);
 padding: 2em;
 font-family: var(--global-font-family);
 
+}
+
+.invoice{
+    width:40em ;
+    font-family: var(--global-font-family);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(239, 239, 239); */
+    
+    
+}
+.container_invoices{
+    background-color: #fffefe;
+    align-items: center;
+    width: 30em;
+    
+}
+
+.demo_invoice{
+    background-color: rgb(46, 46, 46);
+    padding: 0.6em;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+.item1{
+    background-color: rgb(230, 226, 226);
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+   justify-items: center;
+   margin: auto;
+   margin-bottom: 0.5em;
+  
+
+}
+
+.item_desc{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-right: 1em;
 }
 
 /* -------------------------- */
