@@ -126,3 +126,26 @@
     color: #2196F3;
     font-weight: 500;
 }
+.webcam-video{
+    
+    
+    margin: auto;
+    border-radius:10%;
+    max-width:30em;
+    max-height: 30em;
+   
+  }
+
+  .payment-info{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+    background-color: rgb(212, 212, 212);
+    font-family: var(--global-font-family);
+    padding: 1em;
+  }
+  .face_veri{
+    font-size: 12px;
+    
+    font-family: var(--global-font-family);
+  }

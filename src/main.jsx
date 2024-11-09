@@ -8,6 +8,7 @@ import Steps from './steps.jsx'
 import Fraudprvention from './Fraudprvention.jsx'
 import FAQ from './FAQ.jsx'
 import Motion from './Motion.jsx'
+import Angelo from './Angelo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     <Steps/>
     <Howitworks />
    <FAQ />
+  <Angelo/>
   </StrictMode>,
   
 )
