@@ -119,3 +119,10 @@
           font-size: 15px;
           margin-bottom: 2em;
 }
+
+#customized-dialog-title{
+    font-family: var(--global-font-family);
+    font-size: 14px;
+    color: #2196F3;
+    font-weight: 500;
+}

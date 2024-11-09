@@ -11,6 +11,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import homebanner from '/homebanner.svg'
 
+
+
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -57,7 +59,7 @@ export default function Motion() {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Complete Payment 
+        Look directly at the camera for facial recognition to authorize the transaction.
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -73,17 +75,16 @@ export default function Motion() {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati vero expedita nulla, reprehenderit vel libero laudantium! Eligendi quo tempora eveniet, exercitationem, earum minus consequuntur, incidunt harum reiciendis provident amet.
+            POP UP COMING SOON
+            Look directly at the camera for facial recognition to authorize the transaction
            
           </Typography>
           <Typography gutterBottom>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis praesentium, asperiores cupiditate esse illum molestias ipsum dolores obcaecati quasi laborum. Aspernatur, quae pariatur sint neque quis nam officiis quod sit?
+          Please align your face within the frame to proceed with payment
           </Typography>
           <Typography gutterBottom>
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum non eos soluta perferendis esse aperiam distinctio ut quidem sunt obcaecati officiis, iure sapiente atque, asperiores commodi, delectus iste sit aut?
-          </Typography>
-          <Typography gutterBottom>
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum non eos soluta perferendis esse aperiam distinctio ut quidem sunt obcaecati officiis, iure sapiente atque, asperiores commodi, delectus iste sit aut?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis praesentium, asperiores cupiditate esse illum molestias ipsum dolores obcaecati quasi laborum. Aspernatur, quae pariatur sint neque quis nam officiis quod sit?
+          Look directly at the camera for facial recognition to authorize the transaction
           </Typography>
         </DialogContent>
         <DialogActions>

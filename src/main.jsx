@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Component />
     <App />
-    <Howitworks />
-    <Steps/>
     <Motion/>
+    <Steps/>
+    <Howitworks />
    <FAQ />
   </StrictMode>,
   
