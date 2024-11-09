@@ -63,20 +63,59 @@
 }
 .section_modal{
     width: 100%;
-    background-color: #eeeeee;
+    /* background-color: #060505; */
     /* height: 20em; */
     padding: 2em;
     display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
     justify-content: center;
+    
 }
 .modals{
     
     background-color:#fdfdfd;
-    width: 70em;
+    max-width:45em ;
     border-radius: 10px;
-    padding: 1em;
-    /* height: 90%; */
-    box-shadow: 10px 10px 10px 10px rgb(218, 217, 217);
     
-
+    /* height: 90%; */
+    /* box-shadow: 10px 10px 10px 10px rgb(218, 217, 217); */
+    justify-content: center;
+    display: flex;
+   
+}
+.invoice_img{
+    width: 30em;
+}
+.demo_text{
+    font-family: var(--global-font-family);
+    font-size: 20px;
+    font-weight: 400;
+}
+.modals_demo{
+    max-width:30em ;
+    border-radius: 10px;
+    /* background-color: beige; */
+    /* height: 90%; */
+    /* box-shadow: 10px 10px 10px 10px rgb(218, 217, 217); */
+    justify-content: center;
+    display: flex;
+    
+    font-family: var(--global-font-family);
+}
+.livedemo_text{
+    font-family: var(--global-font-family);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.text_demo{line-height: 2em;
+          font-weight: 400;
+          font-size: 16px;
+          margin-bottom: 1em;
+}
+.nb_demo{
+    font-weight: 500;
+          font-size: 15px;
+          margin-bottom: 2em;
 }

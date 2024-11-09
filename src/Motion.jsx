@@ -9,6 +9,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import homebanner from '/homebanner.svg'
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -32,15 +33,22 @@ export default function Motion() {
   return (
     <React.Fragment >
       <section className='section_modal'>
-        <div className='modals'>
+    <div className='modals'>
           <div> 
-            <h2>Demo Invoice</h2>
+            <h2 className='demo_text'>Demo Dashboard</h2>
+            <img src={homebanner } className="logo invoice_img" alt="Vite logo" />
             <div></div>
           
           </div>
-         
+          </div> 
+       <div className='modals_demo'>
+         <div> 
+            <h2 className='livedemo_text'>Try a Live Demo of Facial Payment!</h2>
+            <p className='text_demo'>Experience the future of payments with our facial recognition technology. Click the button below to test a secure and touchless payment experience. Simply allow access to your webcam, scan your face, and see how quick and easy it is to authorize a transaction. No passwords or cards needed—just your smile! 😊
 
-      <Button variant="outlined" onClick={handleClickOpen}>
+           </p> <p className='nb_demo'>Note: This is a demo version; no real payments will be processed.</p>
+
+           <Button variant="outlined" onClick={handleClickOpen}>
         Pay Now
       </Button>
       <BootstrapDialog
@@ -64,29 +72,36 @@ export default function Motion() {
           <CloseIcon />
         </IconButton>
         <DialogContent dividers>
-          <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+          <Typography gutterBottom> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati vero expedita nulla, reprehenderit vel libero laudantium! Eligendi quo tempora eveniet, exercitationem, earum minus consequuntur, incidunt harum reiciendis provident amet.
+           
           </Typography>
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis praesentium, asperiores cupiditate esse illum molestias ipsum dolores obcaecati quasi laborum. Aspernatur, quae pariatur sint neque quis nam officiis quod sit?
           </Typography>
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum non eos soluta perferendis esse aperiam distinctio ut quidem sunt obcaecati officiis, iure sapiente atque, asperiores commodi, delectus iste sit aut?
+          </Typography>
+          <Typography gutterBottom>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum non eos soluta perferendis esse aperiam distinctio ut quidem sunt obcaecati officiis, iure sapiente atque, asperiores commodi, delectus iste sit aut?
           </Typography>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose}>
-            Save changes
+            Payment Completed
           </Button>
         </DialogActions>
       </BootstrapDialog>
-      </div>
-      </section>
+         <div>
+
+        </div>
+          
+          </div>
+          </div> 
+
+      
+    
+  </section>
     </React.Fragment>
   );
 }

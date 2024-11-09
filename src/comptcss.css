@@ -76,14 +76,14 @@ font-family: var(--global-font-family);
     
 }
 .container_invoices{
-    background-color: #fffefe;
+    background-color: #6c4949;
     align-items: center;
     width: 30em;
     
 }
 
 .demo_invoice{
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(132, 80, 80);
     padding: 0.6em;
     border-radius: 10px;
     font-size: 15px;
