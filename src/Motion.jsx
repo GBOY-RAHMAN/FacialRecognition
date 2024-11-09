@@ -181,55 +181,7 @@ export default function Motion() {
           </div>
           </div> 
    
-   {/*  */}
-   <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <Box sx={{ m: 1, position: 'relative' }}>
-        <Fab
-          aria-label="save"
-          color="primary"
-          sx={buttonSx}
-          onClick={handleButtonClick}
-        >
-          {success ? <CheckIcon /> : <AdminPanelSettingsIcon />}
-        </Fab>
-        {loading && (
-          <CircularProgress
-            size={68}
-            sx={{
-              color: green[500],
-              position: 'absolute',
-              top: -6,
-              left: -6,
-              zIndex: 1,
-            }}
-          />
-        )}
-      </Box>
-      <Box sx={{ m: 1, position: 'relative' }}>
-        <Button
-          variant="contained"
-          sx={buttonSx}
-          disabled={loading}
-          onClick={handleButtonClick}
-        >
-          Accept Payment
-        </Button>
-        {loading && (
-          <CircularProgress
-            size={24}
-            sx={{
-              color: green[500],
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              marginTop: '-12px',
-              marginLeft: '-12px',
-            }}
-          />
-        )}
-      </Box>
-    </Box>
-      {/*  */}
+   
     
   </section>
     </React.Fragment>
