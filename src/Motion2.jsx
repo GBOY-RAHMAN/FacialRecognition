@@ -284,7 +284,7 @@ export default function Motion2() {
   return (
     <section className="section_modal">
       <div>
-        <h1>
+        <h1 className="header_section">
           Look directly at the camera for facial recognition to authorize the
           transaction.
         </h1>

@@ -65,11 +65,14 @@
     width: 100%;
     /* background-color: #060505; */
     /* height: 20em; */
-    padding: 2em;
+    /* padding: 2em; */
     display: flex;
     gap: 2em;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center;  */
+    padding: 2em;
+    font-family: var(--global-font-family);
+    
     
 }
 .modals{

@@ -34,7 +34,7 @@ export default function Howitworks() {
     <h1 className='header_prp'>
         How it works 
     </h1>
-    <p className='para_hw'>Imagine a world where payments are as easy as a glance. Our facial recognition payment technology eliminates the need for cash, cards, or complex passwords, providing you with a seamless and secure checkout experience. Simply set up your profile, confirm with a look, and enjoy instant access to your purchases. Here’s how it works in three simple steps:</p>
+    <p className='para_hw'>Imagine a world where payments are as easy as a glance. Our facial recognition payment technology eliminates the need for cash, cards, or complex passwords, providing you with a seamless and secure checkout experience. Simply set up your profile, confirm with a look, and enjoy instant access to your purchases.</p>
      
     </section>
  
