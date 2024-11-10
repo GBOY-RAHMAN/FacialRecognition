@@ -155,7 +155,10 @@ padding: 1em;
   .title_heading{
     max-width:100% ;
     font-family: var(--global-font-family);
-    padding: 1em;
+    padding: 0.5em;
     /* background-color: bisque; */
+  }
+  .big-container{
+    padding: 0;
   }
 }
