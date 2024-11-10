@@ -15,10 +15,10 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Component />
     <App />
-    
+    <Howitworks />
     <Motion2/>
     <Steps/>
-    <Howitworks />
+   
    <FAQ />
   <Angelo/>
   </StrictMode>,
