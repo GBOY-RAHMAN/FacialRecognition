@@ -8,7 +8,7 @@ import Fab from '@mui/material/Fab';
 import CheckIcon from '@mui/icons-material/Check';
 import SaveIcon from '@mui/icons-material/Save';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
-import './faq.css'
+import './Faq.css'
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
