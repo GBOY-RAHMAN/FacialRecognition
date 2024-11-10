@@ -7,7 +7,7 @@ import "./faq.css";
 import { styled } from "@mui/material/styles";
 import { useState, Fragment, useEffect, useRef } from "react";
 import "./Motion2.css";
-
+import matera_logo from '/matera_logo.svg'
 // Import MediaPipe modules
 import {
   FaceDetector,
@@ -19,7 +19,7 @@ export default function Motion2() {
   const demosSection = useRef(null);
   let controller = new AbortController();
   const [msg, setMSG] = React.useState({
-    msg: "System not ready....",
+    msg: "Waiting pay by face",
     type: 0,
   });
   const [paymentRequested, setPaymentRequested] = useState(false);
@@ -245,14 +245,15 @@ export default function Motion2() {
           setMSG({
             msg: `Customer recognized as ${data.lastRegonizedFaces[0].name}`,
             type: 1,
+            fontFamily: "Poppins",
           });
           setTimeout(() => {
-            setMSG({ msg: "Payment succefull!!! Thanks!! ", type: 1 });
+            setMSG({ msg: "Payment succefull", type: 1 });
           }, 3000);
         } else {
           setTimeout(() => {
             setMSG({
-              msg: "Custumoer NOT recognized! Please try again!",
+              msg: "Costumer not recognized. Payment rejected",
               type: 2,
             });
           }, 300);
@@ -286,7 +287,7 @@ export default function Motion2() {
           className="mdc-button mdc-button--raised"
         >
           <span className="mdc-button__ripple"></span>
-          <span className="mdc-button__label">ENABLE Payment</span>
+          <span className="mdc-button__label">Enable pay by face</span>
         </button>
 
        
@@ -294,6 +295,7 @@ export default function Motion2() {
         <button
           onClick={() => setPaymentRequested(true)}
           disabled={detections.length == 0}
+          className='request-payment'
         >
           Request Payment
         </button>
@@ -310,14 +312,22 @@ export default function Motion2() {
             </div>
           </div>
         </div>}
-        <p
+        <p className="output-message"
           style={{fontSize:30,
             backgroundColor:
               msg.type == 0 ? "#3B538E" : msg.type == 1 ? "green" : "red",
+            color: "white",
+            padding: "10px",
+            borderRadius: "10px",
+            textAlign: "center",
+            fontFamily: "Poppins",
           }}
         >
           {msg.msg}
         </p>
+        <i>
+        *payment powerd by:</i> <img style={{backgroundColor:"black"}} width={100} src={matera_logo}></img>
+        
       </section>
     </section>
   );
