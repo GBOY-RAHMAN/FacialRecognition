@@ -113,6 +113,19 @@ export default function Motion2() {
         startTimeMs
       ).detections;
       setDetections(detections2);
+      if(detections2.length > 1){
+        setMSG({
+          msg: "Make sure you are the only one in the webcam",
+          type: 0,
+        })
+      }
+      // else{
+      //   setMSG({
+      //     msg: "Align your face",
+      //     type: 0,
+      //   })
+      // }
+      
       displayVideoDetections(detections2);
     }
 
@@ -250,7 +263,7 @@ export default function Motion2() {
           });
           setTimeout(() => {
             setMSG({ msg: "Payment succefull", type: 1 });
-          }, 3000);
+          }, 2000);
         } else {
           setTimeout(() => {
             setMSG({

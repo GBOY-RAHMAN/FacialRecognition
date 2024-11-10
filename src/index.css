@@ -1,4 +1,15 @@
 *{
+  border: 0;
+  margin: 0;
+}
+html, body { margin: 0; }
+body{
+  padding: 0;
+  margin: 0;
+  /* background-color: white; */
+}
+
+/* *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -16,7 +27,7 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-}
+} */
 
 
 
