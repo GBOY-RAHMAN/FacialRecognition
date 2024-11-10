@@ -287,7 +287,7 @@ export default function Motion() {
               <DialogContent dividers>
                 
                 <video ref={videoRef} autoPlay muted className="webcam-video" style={{ width: '100%', height: 'auto', display: 'none' }}></video>
-                <div class="container">
+                <div className="container">
                   <div className="payment-container">
                     <div className="payment-info">
                     <p className='face_veri'>

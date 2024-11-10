@@ -9,12 +9,14 @@ import Fraudprvention from './Fraudprvention.jsx'
 import FAQ from './FAQ.jsx'
 import Motion from './Motion.jsx'
 import Angelo from './Angelo.jsx'
+import Motion2 from './Motion2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Component />
     <App />
-    <Motion/>
+    
+    <Motion2/>
     <Steps/>
     <Howitworks />
    <FAQ />

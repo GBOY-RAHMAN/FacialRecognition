@@ -11,18 +11,18 @@ export default function steps() {
   return (
     <>
       
-      <section class="image-scroll-section">
+      <section className="image-scroll-section">
           
-            <div class="image-scroll-wrapper">
+            <div className="image-scroll-wrapper">
 
-                <div class="wrapper" id="first_item"></div>
+                <div className="wrapper" id="first_item"></div>
 
-                <div class="rf-hcard-content" > 
-                    <h3 class="rf-recommcard-content-title"><span data-index="2">Create Your Profile</span></h3>
-                   <div class="rf-recommcard-content-img"> 
+                <div className="rf-hcard-content" > 
+                    <h3 className="rf-recommcard-content-title"><span data-index="2">Create Your Profile</span></h3>
+                   <div className="rf-recommcard-content-img"> 
                    <img src={setup} className="rf-hcard-img" alt="Vite logo"  />
                     </div>
-                    <div class="rf-recommcard-content-info">
+                    <div className="rf-recommcard-content-info">
                         
                         
                             
@@ -31,12 +31,12 @@ export default function steps() {
                     
                         </div></div>
                 </div>
-                <div class="rf-hcard-content payment" > 
-                    <h3 class="rf-recommcard-content-title"><span data-index="2">Link Your Payment Method</span></h3>
-                   <div class="rf-recommcard-content-img"> 
+                <div className="rf-hcard-content payment" > 
+                    <h3 className="rf-recommcard-content-title"><span data-index="2">Link Your Payment Method</span></h3>
+                   <div className="rf-recommcard-content-img"> 
                    <img src={linkpayment} className="rf-hcard-img" alt="Vite logo"  />
                     </div>
-                    <div class="rf-recommcard-content-info">
+                    <div className="rf-recommcard-content-info">
                         
                         
                             
@@ -45,12 +45,12 @@ export default function steps() {
                     
                         </div></div>
                 </div>
-                <div class="rf-hcard-content secure" > 
-                    <h3 class="rf-recommcard-content-title"><span data-index="2" className='secureitem'>Secure Your Data</span></h3>
-                   <div class="rf-recommcard-content-img"> 
+                <div className="rf-hcard-content secure" > 
+                    <h3 className="rf-recommcard-content-title"><span data-index="2" className='secureitem'>Secure Your Data</span></h3>
+                   <div className="rf-recommcard-content-img"> 
                    <img src={secure} className="rf-hcard-img" alt="Vite logo"  />
                     </div>
-                    <div class="rf-recommcard-content-info">
+                    <div className="rf-recommcard-content-info">
                         
                         
                             
@@ -59,12 +59,12 @@ export default function steps() {
                     
                         </div></div>
                 </div>
-                <div class="rf-hcard-content" > 
-                    <h3 class="rf-recommcard-content-title"><span data-index="2">Verify Your Identity</span></h3>
-                   <div class="rf-recommcard-content-img"> 
+                <div className="rf-hcard-content" > 
+                    <h3 className="rf-recommcard-content-title"><span data-index="2">Verify Your Identity</span></h3>
+                   <div className="rf-recommcard-content-img"> 
                    <img src={verify} className="rf-hcard-img" alt="Vite logo"  />
                     </div>
-                    <div class="rf-recommcard-content-info">
+                    <div className="rf-recommcard-content-info">
                         
                         
                             
@@ -75,12 +75,12 @@ export default function steps() {
                 </div>
 
                 
-                <div class="rf-hcard-content secure" > 
-                    <h3 class="rf-recommcard-content-title"><span data-index="2" className='secureitem'>Confirm Your Purchase</span></h3>
-                   <div class="rf-recommcard-content-img"> 
+                <div className="rf-hcard-content secure" > 
+                    <h3 className="rf-recommcard-content-title"><span data-index="2" className='secureitem'>Confirm Your Purchase</span></h3>
+                   <div className="rf-recommcard-content-img"> 
                    <img src={confirmPayment} className="rf-hcard-img" alt="Vite logo"  />
                     </div>
-                    <div class="rf-recommcard-content-info">
+                    <div className="rf-recommcard-content-info">
                         
                         
                             
@@ -89,7 +89,7 @@ export default function steps() {
                     
                         </div></div>
                 </div>
-            <div class="wrapper" id="first_item"></div>
+            <div className="wrapper" id="first_item"></div>
             </div>
         
     
