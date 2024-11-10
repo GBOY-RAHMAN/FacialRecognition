@@ -23,6 +23,10 @@ export default function Motion2() {
     msg: "Waiting pay by face",
     type: 0,
   });
+  const [msg2, setMSG2] = React.useState({
+    msg: "Waiting pay by face",
+    type: 0,
+  });
   const [paymentRequested, setPaymentRequested] = useState(false);
   const valueRef = useRef(null);
   let faceDetector;
@@ -114,17 +118,17 @@ export default function Motion2() {
       ).detections;
       setDetections(detections2);
       if(detections2.length > 1){
-        setMSG({
+        setMSG2({
           msg: "Make sure you are the only one in the webcam",
           type: 0,
         })
       }
-      // else{
-      //   setMSG({
-      //     msg: "Align your face",
-      //     type: 0,
-      //   })
-      // }
+      else{
+        setMSG2({
+          msg: "Align your face",
+          type: 0,
+        })
+      }
       
       displayVideoDetections(detections2);
     }
@@ -233,7 +237,7 @@ export default function Motion2() {
     apiURLAux
   ) => {
     try {
-      setMSG({ msg: "Recognition initiated....", type: 0 });
+      setMSG({ msg: "Recognition initiated....", type: 1 });
       setPaymentRequested(false);
       const response = await fetch(
         `${apiURLAux}/api/recognize_face_v2?key_enviroment_url=${enviromentNameAux}&ipaddress=${clientIpAddressAux}`,
@@ -258,17 +262,17 @@ export default function Motion2() {
           //setMSG(`Payment Successful by ${data.lastRegonizedFaces[0].name}`);
           setMSG({
             msg: `Customer recognized as ${data.lastRegonizedFaces[0].name}`,
-            type: 1,
+            type: 2,
             fontFamily: "Poppins",
           });
           setTimeout(() => {
-            setMSG({ msg: "Payment succefull", type: 1 });
+            setMSG({ msg: "Payment succesful", type: 3 });
           }, 2000);
         } else {
           setTimeout(() => {
             setMSG({
               msg: "Costumer not recognized. Payment rejected",
-              type: 2,
+              type: 4,
             });
           }, 300);
           // setMSG("Payment rejected");
@@ -335,7 +339,11 @@ export default function Motion2() {
         <p className="output-message"
           style={{
             backgroundColor:
-              msg.type == 0 ? "#3B538E" : msg.type == 1 ? "green" : "red",
+              msg.type == 0 ? "#ccccbc" 
+              : msg.type == 1 ? "gray" 
+              : msg.type == 2 ? "#3b538e"
+              :msg.type == 3 ? "green"
+              :"red" ,
             color: "white",
             padding: "10px",
             borderRadius: "10px",
@@ -345,8 +353,21 @@ export default function Motion2() {
         >
           {msg.msg}
         </p>
+        <p className="output-message"
+          style={{
+            backgroundColor:
+              msg2.type == 0 ? "#ada378" : msg2.type == 1 ? "green" : "red",
+            color: "white",
+            padding: "10px",
+            borderRadius: "10px",
+            textAlign: "center",
+            fontFamily: "Poppins",
+          }}
+        >
+          {msg2.msg}
+        </p>
         <i>
-        *payment powerd by:</i> <img style={{backgroundColor:"black"}} width={100} src={matera_logo}></img>
+        *payment powered by:</i> <img style={{backgroundColor:"black"}} width={100} src={matera_logo}></img>
         
       </section>
     </section>
