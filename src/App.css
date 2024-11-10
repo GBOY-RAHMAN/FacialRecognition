@@ -40,7 +40,7 @@ padding: 1em;
 }
 .title_body{
   line-height: 1.7em;
-  max-width:30em;
+  max-width:40em;
   font-weight: 400;
   font-size: 16px;
   margin-top: 1em;
@@ -50,7 +50,7 @@ padding: 1em;
   background-color: rgb(255, 255, 255);
   margin: auto;
   border-radius: 20px;
-  max-width:30em;
+  max-width:40em;
   max-height: 30em;
   display: flex;
   justify-content: center;
@@ -160,5 +160,20 @@ padding: 1em;
   }
   .big-container{
     padding: 0;
+  }
+
+  .box{
+  
+    /* background-color: rgb(255, 255, 255); */
+    margin: auto;
+    border-radius: 20px;
+    width:90%;
+    max-height: 30em;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    position: relative; /* Needed for positioning the line */
+    overflow: hidden; /* To contain the scanning line within the box */
+    margin-bottom: 0.5em;
   }
 }
