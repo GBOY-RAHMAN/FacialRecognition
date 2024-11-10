@@ -15,6 +15,7 @@ import {
 } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0";
 
 export default function Motion2() {
+  const [amountToPay, setAmountToPay] = useState(100.00);
   const videoRef = useRef(null);
   const demosSection = useRef(null);
   let controller = new AbortController();
@@ -287,7 +288,7 @@ export default function Motion2() {
           className="mdc-button mdc-button--raised"
         >
           <span className="mdc-button__ripple"></span>
-          <span className="mdc-button__label">Enable pay by face</span>
+          <span className="mdc-button__label">Enable Pay By Face</span>
         </button>
 
        
@@ -299,6 +300,9 @@ export default function Motion2() {
         >
           Request Payment
         </button>
+        <a href="https://face-login-ui.vercel.app/selfregister?api_url=https://face_recognitino_api.19860515.xyz&enviroment_name=matera" target="_blank">
+          <button className="register-button">Register A New Face</button>
+        </a>
        { <div className="container">
           <div className="payment-container">
             <div className="payment-info">
@@ -307,13 +311,13 @@ export default function Motion2() {
                 frame to continue with the payment process
               </p>
               <h3>Total</h3>
-              <p><input type="text" value="$123.00"/></p>
+              <p><input type="text" value={amountToPay} onChange={(e)=>setAmountToPay(e.target.value)} /></p>
               <p> Paymet</p>
             </div>
           </div>
         </div>}
         <p className="output-message"
-          style={{fontSize:30,
+          style={{
             backgroundColor:
               msg.type == 0 ? "#3B538E" : msg.type == 1 ? "green" : "red",
             color: "white",

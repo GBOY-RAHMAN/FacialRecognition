@@ -1,3 +1,9 @@
+:root {
+  --suggested: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --global-font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --second-global-font-family: Comic Sans MS Bold,Avenir Roman,Avenir Next Condensed Bold;
+  --sk-fill-tertiary: #fdfdfd;
+}
 
 @use "@material";
 body {
@@ -127,5 +133,22 @@ section {
 }
 
 .output-message {
-  font-family: Poppins, sans-serif;
+  font-family: var(--global-font-family) !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.register-button {
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(212, 0, 0);
+  margin-left: 10px;
+}
+
+.register-button:hover {
+  background-color: #620000;
+  cursor: pointer;
 }
