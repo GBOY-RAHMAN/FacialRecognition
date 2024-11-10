@@ -3,7 +3,7 @@
 "use client";
 import * as React from "react";
 import { green } from "@mui/material/colors";
-import "./faq.css";
+import "./Faq.css";
 import { styled } from "@mui/material/styles";
 import { useState, Fragment, useEffect, useRef } from "react";
 import "./Motion2.css";
