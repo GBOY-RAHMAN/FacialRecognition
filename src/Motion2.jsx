@@ -125,7 +125,7 @@ export default function Motion2() {
       }
       else{
         setMSG2({
-          msg: "Align your face",
+          msg: "Ready to Pay",
           type: 0,
         })
       }
