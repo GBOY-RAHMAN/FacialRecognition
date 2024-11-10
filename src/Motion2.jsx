@@ -283,7 +283,7 @@ export default function Motion2() {
 
   return (
     <section className="section_modal">
-      <div>
+      <div className="motion_webcam">
         <h1 className="header_section">
           Look directly at the camera for facial recognition to authorize the
           transaction.
@@ -291,7 +291,10 @@ export default function Motion2() {
 
         <section ref={demosSection} className="invisible">
           <div ref={liveViewRef} className="videoView">
-            <video ref={videoRef} autoPlay playsInline></video>
+            <section className="webcam_pop">
+            <video ref={videoRef} autoPlay playsInline ></video>
+            </section>
+           
           </div>
         </section>
       </div>
